@@ -1,3 +1,4 @@
+from product import Product
 from extended_list import ExtendedList
 from animal import Dog
 from book import Book
@@ -19,6 +20,12 @@ def main() -> None:
 
     print("Сумма элементов:", numbers.sum_values())
     print("Среднее значение:", numbers.average())
+    product = Product("Клавиатура", 3500)
+    print("Товар:", product.name)
+    print("Цена:", product.price)
+
+    product.price = 3200
+    print("Новая цена:", product.price)
 
 
 if __name__ == "__main__":
