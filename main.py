@@ -1,3 +1,4 @@
+from extended_list import ExtendedList
 from animal import Dog
 from book import Book
 from vector import Vector
@@ -14,6 +15,10 @@ def main() -> None:
 
     book = Book("Мастер и Маргарита", "Михаил Булгаков")
     print("Книга:", book.get_info())
+    numbers = ExtendedList([10, 20, 30, 40])
+
+    print("Сумма элементов:", numbers.sum_values())
+    print("Среднее значение:", numbers.average())
 
 
 if __name__ == "__main__":
